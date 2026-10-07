@@ -3,6 +3,9 @@ name: Run Weather Script
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "14 8 * * *"
+
 jobs:
   weather:
     runs-on: ubuntu-latest
